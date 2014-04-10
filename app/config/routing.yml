@@ -1,0 +1,5 @@
+purple_booth_fax_upload:
+    resource: "@PurpleBoothFaxUploadBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
