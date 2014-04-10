@@ -4,7 +4,9 @@
     "type": "project",
     "description": "Allow users to upload scans of documents to fax to a standard number.",
     "autoload": {
-        "psr-0": { "": "src/" }
+        "psr-0": {
+            "": "src/"
+        }
     },
     "require": {
         "php": ">=5.3.3",
@@ -21,7 +23,8 @@
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "require-dev": {
-        "phpspec/phpspec": "2.0.*@dev"
+        "phpspec/phpspec": "2.0.*@dev",
+        "phpunit/phpunit": "4.0.*"
     },
     "scripts": {
         "post-install-cmd": [
