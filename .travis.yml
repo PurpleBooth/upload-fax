@@ -9,7 +9,9 @@ php:
 before_script:
   - composer self-update
   - composer install --prefer-source -n
+  - app/console server:run -r app/config/routing_test.php &
 
 script:
   - phpunit -c app
   - bin/phpspec run
+  - bin/behat
