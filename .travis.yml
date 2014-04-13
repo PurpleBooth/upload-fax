@@ -9,7 +9,9 @@ php:
 before_script:
   - composer self-update
   - composer install --prefer-source -n
+  - nohup app/console server:run --router=../app/router_test.php --docroot=web/ &
 
 script:
   - phpunit -c app
   - bin/phpspec run
+  - bin/behat
