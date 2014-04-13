@@ -5,4 +5,4 @@ default:
     Behat\MinkExtension\Extension:
       base_url:    'http://localhost:8000'
       goutte:      ~
-    Behat\Symfony2Extension\Extension: ~
+    Behat\Symfony2Extension\Extension:

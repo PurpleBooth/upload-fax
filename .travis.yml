@@ -9,7 +9,7 @@ php:
 before_script:
   - composer self-update
   - composer install --prefer-source -n
-  - app/console server:run -r app/config/routing_test.php &
+  - nohup app/console server:run --router=../app/router_test.php --docroot=web/ &
 
 script:
   - phpunit -c app
